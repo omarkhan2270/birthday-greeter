@@ -1,0 +1,7 @@
+<h1> Your birthday is on <%= @date %> </h1>
+<div> Todays date is: <%= @date_today.strftime("%d/%m/%y") %> </div>
+<% if @date.to_s == @date_today.to_s %>
+<div> </div>HAPPY BIRTHDAY!! </div>
+<% else %>
+<div> Today is not your birthday </div>
+<% end %>
